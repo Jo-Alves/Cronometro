@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cronmetro</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        button{
+            display: block;
+            margin: 5px;
+            width: 100%;
+            height: 30px;
+        }
+         input{
+            width: 50%;
+            margin-left: 20px;
+        } 
+        div{
+            width: 300px;
+            border: 1px dotted black;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 5px;
+        }
+        .registro{
+            position: absolute;
+            top: 152px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cro_cres, .cro_dec{
+            font-family: 'ds-Digital'
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <label>Cronometro Crescente: </label>
+        <label class="cro_cres"></label>
+        <button class="btnExecZerar">Executar</button>  
+        <button class="btnRegistrar">Registrar</button>  
+        <button class="btnLimpar">Limpar Registro</button>    
+    </div>
+    <div class="registro">
+
+    </div>
+    <script src="cronometro.js">
+        
+    </script>
+</body>
+</html>
